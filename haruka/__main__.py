@@ -20,21 +20,22 @@ from haruka.modules.helper_funcs.misc import paginate_modules
 from haruka.modules.translations.strings import tld, tld_help 
 from haruka.modules.connection import connected
 
-PM_START = """Hello {}, my name is {}!
+PM_START = """Hello {}, My Name is {}!
 
-You know how hard it is sometimes to manage group so here is the solution for you
+You know how hard it is sometimes to manage group. So here is the solution for you.
 
-I'm group manager bot and Anti-spam for RR Players🃏
+• I'm group manager bot and Anti-spam for RR Players🃏
 
-Activate Anti-spam protection in your BM by this command : 
-/antispam on 
+• Activate Anti-spam protection in your BM by this command : 
+  /antispam on 
 
-Made from the source code of [AXEL 🇲🇨](t.me/SyndicateTwenty4)
+• Made from the source code of [AXEL 🇲🇨](t.me/SyndicateTwenty4)
 
-Deploy a bot like me [now](www.github.com/KENZO-404/GroupManagerLynx)
+• Click /help or Help button below to find out more about how to use me to my full potential.
 
-Click /help or Help button below to find out more about how to use me to my full potential.
-
+• Sponsored by 
+✓ [⚡𝗟𝘆𝗻𝘅🐈𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡](github.com/KENZO-404/Lynx-Userbot)
+✓ [𝙷𝚄𝙼𝙰𝙽 𝙎𝙏𝙊𝙍𝙔](t.me/SomethingIsMissingCH)
 """
 
 
@@ -152,8 +153,9 @@ def send_start(bot, update):
     first_name = update.effective_user.first_name 
     text = PM_START
 
-    keyboard = [[InlineKeyboardButton(text="🇲🇨 Language", callback_data="set_lang_")]]
-    keyboard += [[InlineKeyboardButton(text="🛠 Reporting", callback_data="cntrl_panel_M"), 
+    keyboard = [[InlineKeyboardButton(text="🇲🇨 𝐋𝐞𝐧𝐠𝐮𝐚𝐠𝐞", callback_data="set_lang_")]]
+    keyboard = [[InlineKeyboardButton(text="⚡DEPLOY to HEROKU⚡", callback_data="https://github.com/KENZO-404/GroupManagerLynx")]]
+    keyboard += [[InlineKeyboardButton(text="🚨 𝐑𝐞𝐩𝐨𝐫𝐭𝐢𝐧𝐠", callback_data="cntrl_panel_M"), 
         InlineKeyboardButton(text="❔ Help", callback_data="help_back")]]
 
     update.effective_message.reply_text(PM_START.format(escape_markdown(first_name), bot.first_name), reply_markup=InlineKeyboardMarkup(keyboard), disable_web_page_preview=True, parse_mode=ParseMode.MARKDOWN)
