@@ -392,7 +392,7 @@ KICK_HANDLER = DisableAbleCommandHandler("kick", kick, pass_args=True, filters=F
 UNBAN_HANDLER = DisableAbleCommandHandler("unban", unban, pass_args=True, filters=Filters.group, admin_ok=True)
 KICKME_HANDLER = DisableAbleCommandHandler("kickme", kickme, filters=Filters.group)
 SBAN_HANDLER = DisableAbleCommandHandler("sban", sban, pass_args=True, filters=Filters.group, admin_ok=True)
-BANME_HANDLER = DisableAbleCommandHandler("banme", banme, filters=Filters.group)
+BANME_HANDLER = DisableAbleCommandHandler("akuwibu", akuwibu, filters=Filters.group)
 
 dispatcher.add_handler(BAN_HANDLER)
 dispatcher.add_handler(TEMPBAN_HANDLER)
