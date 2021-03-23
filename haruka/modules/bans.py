@@ -370,7 +370,7 @@ This module allows you to do that easily, by exposing some common actions, so ev
 
 Available commands are:
  - /ban: bans a user from your chat.
- - /banme: ban yourself
+ - /akucakep: ban yourself
  - /tban: temporarily bans a user from your chat. set time using int<d/h/m> (days hours minutes)
  - /unban: unbans a user from your chat.
  - /sban: silently bans a user. (via handle, or reply)
