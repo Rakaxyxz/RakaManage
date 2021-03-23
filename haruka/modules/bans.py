@@ -240,7 +240,7 @@ def kickme(bot: Bot, update: Update):
 @bot_admin
 @can_restrict
 @loggable
-def banme(bot: Bot, update: Update):
+def akuwibu(bot: Bot, update: Update):
     user_id = update.effective_message.from_user.id
     chat = update.effective_chat
     user = update.effective_user
@@ -370,7 +370,7 @@ This module allows you to do that easily, by exposing some common actions, so ev
 
 Available commands are:
  - /ban: bans a user from your chat.
- - /akucakep: ban yourself
+ - /akucakep: handsome yourself.
  - /tban: temporarily bans a user from your chat. set time using int<d/h/m> (days hours minutes)
  - /unban: unbans a user from your chat.
  - /sban: silently bans a user. (via handle, or reply)
@@ -390,9 +390,9 @@ BAN_HANDLER = DisableAbleCommandHandler("ban", ban, pass_args=True, filters=Filt
 TEMPBAN_HANDLER = DisableAbleCommandHandler(["tban", "tempban"], temp_ban, pass_args=True, filters=Filters.group, admin_ok=True)
 KICK_HANDLER = DisableAbleCommandHandler("kick", kick, pass_args=True, filters=Filters.group, admin_ok=True)
 UNBAN_HANDLER = DisableAbleCommandHandler("unban", unban, pass_args=True, filters=Filters.group, admin_ok=True)
-KICKME_HANDLER = DisableAbleCommandHandler("kickme", kickme, filters=Filters.group)
+KICKME_HANDLER = DisableAbleCommandHandler("kickme", kickme, filters=Filters.group, admin_ok=True)
 SBAN_HANDLER = DisableAbleCommandHandler("sban", sban, pass_args=True, filters=Filters.group, admin_ok=True)
-BANME_HANDLER = DisableAbleCommandHandler("banme", banme, filters=Filters.group)
+BANME_HANDLER = DisableAbleCommandHandler("banme", banme, filters=Filters.group, admin_ok=True)
 
 dispatcher.add_handler(BAN_HANDLER)
 dispatcher.add_handler(TEMPBAN_HANDLER)
