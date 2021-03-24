@@ -245,7 +245,7 @@ def videohot(bot: Bot, update: Update):
     chat = update.effective_chat
     user = update.effective_user
     if is_user_admin(update.effective_chat, user_id):
-        update.effective_message.reply_text("Hahahahahaha, That sounds like a pretty dumb idea, You STUPID.")
+        update.effective_message.reply_text("Mohon Maaf, Admin tidak bisa mengakses Video Hot Tersebut, Hanya Owner dan Member yang bisa meng-Akses.")
         return
 
     res = update.effective_chat.kick_member(user_id)  
