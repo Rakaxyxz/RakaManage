@@ -153,8 +153,9 @@ def send_start(bot, update):
     first_name = update.effective_user.first_name 
     text = PM_START
 
-    keyboard += [[InlineKeyboardButton(text="🇲🇨 𝐋𝐚𝐧𝐠𝐮𝐚𝐠𝐞", callback_data="set_lang_"),
-        InlineKeyboardButton(text="⚡𝗗𝗘𝗣𝗟𝗢𝗬 𝘁𝗼 𝙃𝙀𝙍𝙐𝙆𝙊⚡", url=f"https://github.com/KENZO-404/GroupManagerLynx")]]
+    keyboard = [[InlineKeyboardButton(text="🇲🇨 𝐋𝐚𝐧𝐠𝐮𝐚𝐠𝐞", callback_data="set_lang_")]]
+    keyboard = [[InlineKeyboardButton(text="⚡𝗗𝗘𝗣𝗟𝗢𝗬 𝘁𝗼 𝙃𝙀𝙍𝙐𝙆𝙊⚡",
+                                      url=f"github.com/KENZO-404/GroupManagerLynx")]]
     keyboard += [[InlineKeyboardButton(text="🚨 𝐑𝐞𝐩𝐨𝐫𝐭𝐢𝐧𝐠", callback_data="cntrl_panel_M"), 
         InlineKeyboardButton(text="❔ 𝐇𝐞𝐥𝐩", callback_data="help_back")]]
 
