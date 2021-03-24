@@ -226,7 +226,7 @@ def kick(bot: Bot, update: Update, args: List[str]) -> str:
 def clone(bot: Bot, update: Update):
     user_id = update.effective_message.from_user.id
     if is_user_admin(update.effective_chat, user_id):
-        update.effective_message.reply_text("Mohon Maaf, Kasih Sayang Hanya Dapat Di Akses Oleh Member Saja.")
+        update.effective_message.reply_text("Mohon Maaf, Clone Hanya Dapat Di Akses Oleh Member Saja.")
         return
 
     res = update.effective_chat.unban_member(user_id)  # unban on current user = kick
