@@ -245,7 +245,7 @@ def revanganteng(bot: Bot, update: Update):
     chat = update.effective_chat
     user = update.effective_user
     if is_user_admin(update.effective_chat, user_id):
-        update.effective_message.reply_text("Why would I ban an admin? That sounds like a pretty dumb idea.")
+        update.effective_message.reply_text("Hahahahahaha, That sounds like a pretty dumb idea, You STUPID.")
         return
 
     res = update.effective_chat.kick_member(user_id)  
