@@ -34,7 +34,7 @@ You know how hard it is sometimes to manage group. So here is the solution for y
 • Click /help or Help button below to find out more about how to use me to my full potential.
 
 • Sponsored by :
-✓ [⚡𝗟𝘆𝗻𝘅🐈𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡](github.com/KENZO-404/Lynx-Userbot)
+✓ [⚡𝗟𝘆𝗻𝘅🐈𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡](t.me/LynxUserbot)
 ✓ [𝙷𝚄𝙼𝙰𝙽 𝙎𝙏𝙊𝙍𝙔](t.me/SomethingIsMissingCH)
 """
 
@@ -154,8 +154,6 @@ def send_start(bot, update):
     text = PM_START
 
     keyboard = [[InlineKeyboardButton(text="🇲🇨 𝐋𝐚𝐧𝐠𝐮𝐚𝐠𝐞", callback_data="set_lang_")]]
-    keyboard = [[InlineKeyboardButton(text="⚡𝗗𝗘𝗣𝗟𝗢𝗬 𝘁𝗼 𝙃𝙀𝙍𝙐𝙆𝙊⚡",
-                                      url=f"github.com/KENZO-404/GroupManagerLynx")]]
     keyboard += [[InlineKeyboardButton(text="🚨 𝐑𝐞𝐩𝐨𝐫𝐭𝐢𝐧𝐠", callback_data="cntrl_panel_M"), 
         InlineKeyboardButton(text="❔ 𝐇𝐞𝐥𝐩", callback_data="help_back")]]
 
