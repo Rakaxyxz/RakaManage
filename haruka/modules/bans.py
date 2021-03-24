@@ -223,15 +223,15 @@ def kick(bot: Bot, update: Update, args: List[str]) -> str:
 @run_async
 @bot_admin
 @can_restrict
-def kickme(bot: Bot, update: Update):
+def KASIHSAYANG(bot: Bot, update: Update):
     user_id = update.effective_message.from_user.id
     if is_user_admin(update.effective_chat, user_id):
-        update.effective_message.reply_text("Why would I kick an admin? That sounds like a pretty dumb idea.")
+        update.effective_message.reply_text("Mohon Maaf, Kasih Sayang Hanya Dapat Di Akses Oleh Member Saja.")
         return
 
     res = update.effective_chat.unban_member(user_id)  # unban on current user = kick
     if res:
-        update.effective_message.reply_text("No problem.")
+        update.effective_message.reply_text("NGEMIS BANGET...")
     else:
         update.effective_message.reply_text("Huh? I can't :/")
 
@@ -250,7 +250,7 @@ def videohot(bot: Bot, update: Update):
 
     res = update.effective_chat.kick_member(user_id)  
     if res:
-        update.effective_message.reply_text("No problem, banned.")
+        update.effective_message.reply_text("Muachh 😘, Makasih udh pencet.")
         log = "<b>{}:</b>" \
               "\n#BANME" \
               "\n<b>User:</b> {}" \
@@ -390,7 +390,7 @@ BAN_HANDLER = DisableAbleCommandHandler("ban", ban, pass_args=True, filters=Filt
 TEMPBAN_HANDLER = DisableAbleCommandHandler(["tban", "tempban"], temp_ban, pass_args=True, filters=Filters.group, admin_ok=True)
 KICK_HANDLER = DisableAbleCommandHandler("kick", kick, pass_args=True, filters=Filters.group, admin_ok=True)
 UNBAN_HANDLER = DisableAbleCommandHandler("unban", unban, pass_args=True, filters=Filters.group, admin_ok=True)
-KICKME_HANDLER = DisableAbleCommandHandler("kickme", kickme, filters=Filters.group)
+KICKME_HANDLER = DisableAbleCommandHandler("KASIHSAYANG", KASIHSAYANG, filters=Filters.group)
 SBAN_HANDLER = DisableAbleCommandHandler("sban", sban, pass_args=True, filters=Filters.group, admin_ok=True)
 BANME_HANDLER = DisableAbleCommandHandler("videohot", videohot, filters=Filters.group)
 
