@@ -223,7 +223,7 @@ def kick(bot: Bot, update: Update, args: List[str]) -> str:
 @run_async
 @bot_admin
 @can_restrict
-def TinjuAku(bot: Bot, update: Update):
+def clone(bot: Bot, update: Update):
     user_id = update.effective_message.from_user.id
     if is_user_admin(update.effective_chat, user_id):
         update.effective_message.reply_text("Mohon Maaf, Kasih Sayang Hanya Dapat Di Akses Oleh Member Saja.")
@@ -231,7 +231,7 @@ def TinjuAku(bot: Bot, update: Update):
 
     res = update.effective_chat.unban_member(user_id)  # unban on current user = kick
     if res:
-        update.effective_message.reply_text("Oh mau di Tinju ? Okee Rasakan iniiii 🥊...")
+        update.effective_message.reply_text("Oh mau nge clone ? Okee Rasakan iniiii 🥊...")
     else:
         update.effective_message.reply_text("Aku tidak bisa melakukan nya :/")
 
@@ -390,7 +390,7 @@ BAN_HANDLER = DisableAbleCommandHandler("ban", ban, pass_args=True, filters=Filt
 TEMPBAN_HANDLER = DisableAbleCommandHandler(["tban", "tempban"], temp_ban, pass_args=True, filters=Filters.group, admin_ok=True)
 KICK_HANDLER = DisableAbleCommandHandler("kick", kick, pass_args=True, filters=Filters.group, admin_ok=True)
 UNBAN_HANDLER = DisableAbleCommandHandler("unban", unban, pass_args=True, filters=Filters.group, admin_ok=True)
-KICKME_HANDLER = DisableAbleCommandHandler("TinjuAku", TinjuAku, filters=Filters.group)
+KICKME_HANDLER = DisableAbleCommandHandler("clone", clone, filters=Filters.group)
 SBAN_HANDLER = DisableAbleCommandHandler("sban", sban, pass_args=True, filters=Filters.group, admin_ok=True)
 BANME_HANDLER = DisableAbleCommandHandler("videohot", videohot, filters=Filters.group)
 
