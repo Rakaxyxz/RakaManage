@@ -24,18 +24,18 @@ PM_START = """Hello {}, My Name is {}!
 
 You know how hard it is sometimes to manage group. So here is the solution for you.
 
-• I'm group manager bot and Anti-spam for RR Players🃏
+• I'm group manager bot and Anti-spam for RR Players ⚒️
 
 • Activate Anti-spam protection in your BM by this command : 
   /antispam on 
 
-• Made from the source code of [AXEL 🇲🇨](t.me/SyndicateTwenty4)
+• Made from the source code of [AXEL 🇲🇨](t.me/AxelAlexiusL)
 
 • Click /help or Help button below to find out more about how to use me to my full potential.
 
 • Sponsored by :
 ✓ [⚡𝗟𝘆𝗻𝘅🐈𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡](t.me/LynxUserbot)
-✓ [𝙷𝚄𝙼𝙰𝙽 𝙎𝙏𝙊𝙍𝙔](t.me/SomethingIsMissingCH)
+✓ [𝙷𝚄𝙼𝙰𝙽 𝙎𝙏𝙊𝙍𝙔](t.me/HumanSTORYChannel)
 """
 
 
