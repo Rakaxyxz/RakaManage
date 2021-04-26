@@ -586,7 +586,7 @@ def main():
 
     if WEBHOOK:
         LOGGER.info("Using webhooks.")
-        updater.start_webhook(listen="0.0.0.0",
+        updater.start_webhook(listen="127.0.0.1",
                               port=PORT,
                               url_path=TOKEN)
 
@@ -598,8 +598,7 @@ def main():
 
     else:
         LOGGER.info("Using long polling.")
-        updater.start_polling(timeout=15, read_latency=4)
-
+        updater.start_polling(poll_interval=0.0, timeout=10, clean=False, bootstrap_retries=-1, read_latency=3.0)
     updater.idle()
 
 CHATS_CNT = {}
@@ -615,20 +614,25 @@ def process_update(self, update):
             self.logger.exception('An uncaught error was raised while handling the error')
         return
 
-    now = datetime.datetime.utcnow()
-    cnt = CHATS_CNT.get(update.effective_chat.id, 0)
-
-    t = CHATS_TIME.get(update.effective_chat.id, datetime.datetime(1970, 1, 1))
-    if t and now > t + datetime.timedelta(0, 1):
-        CHATS_TIME[update.effective_chat.id] = now
-        cnt = 0
-    else:
-        cnt += 1
-
-    if cnt > 10:
+    if update.effective_chat: #Checks if update contains chat object
+        now = datetime.datetime.utcnow()
+    try:
+        cnt = CHATS_CNT.get(update.effective_chat.id, 0)
+    except AttributeError:
+        self.logger.exception('An uncaught error was raised while updating process')
         return
 
-    CHATS_CNT[update.effective_chat.id] = cnt
+        t = CHATS_TIME.get(update.effective_chat.id, datetime.datetime(1970, 1, 1))
+        if t and now > t + datetime.timedelta(0, 1):
+            CHATS_TIME[update.effective_chat.id] = now
+            cnt = 0
+        else:
+            cnt += 1
+
+        if cnt > 10:
+            return
+        CHATS_CNT[update.effective_chat.id] = cnt
+
     for group in self.groups:
         try:
             for handler in (x for x in self.handlers[group] if x.check_update(update)):
