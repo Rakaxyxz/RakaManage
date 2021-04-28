@@ -35,7 +35,7 @@ You know how hard it is sometimes to manage group. So here is the solution for y
 
 • Sponsored by :
 ✓ [⚡𝗟𝘆𝗻𝘅🐈𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡](t.me/LynxUserbot)
-✓ [𝙷𝚄𝙼𝙰𝙽 𝙎𝙏𝙊𝙍𝙔](t.me/HumanSTORYChannel)
+✓ [Federation Super Group](t.me/FederationSuperGroup)
 """
 
 
