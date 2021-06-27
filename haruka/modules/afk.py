@@ -1,15 +1,16 @@
 from typing import Optional
-
 from telegram import Message, Update, Bot, User
 from telegram import MessageEntity, ParseMode
 from telegram.error import BadRequest
-from telegram.ext import Filters, MessageHandler, run_async
-
+from telegram.ext import (
+    Filters,
+    MessageHandler,
+    run_async,
+)
 from haruka import dispatcher
 from haruka.modules.disable import DisableAbleCommandHandler, DisableAbleRegexHandler
 from haruka.modules.sql import afk_sql as sql
 from haruka.modules.users import get_user_id
-
 from haruka.modules.translations.strings import tld
 
 AFK_GROUP = 7
@@ -87,7 +88,7 @@ def check_afk(bot, update, user_id, fst_name):
         if not user.reason:
             res = tld(chat.id, f"#BUSY\n{fst_name} 𝗦𝗲𝗱𝗮𝗻𝗴 𝘼𝙁𝙆❗")
         else:
-            res = tld(chat.id, f"#BUSY\n{fst_name} 𝗦𝗲𝗱𝗮𝗻𝗴 𝘼𝙁𝙆❗\n• 𝘼𝙇𝘼𝙎𝘼𝙉 ≈ {user.reason}")
+            res = tld(chat.id, f"#BUSY\n{fst_name} 𝗦𝗲𝗱𝗮𝗻𝗴 𝘼𝙁𝙆❗\n**Reason :** {user.reason}")
         update.effective_message.reply_text(res)
 
 
