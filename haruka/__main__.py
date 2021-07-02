@@ -29,7 +29,7 @@ You know how hard it is sometimes to manage group. So here is the solution for y
 • Activate Anti-spam protection in your BM by this command : 
   /antispam on 
 
-• Made from the source code of [AXEL 🇲🇨](t.me/AxelAlexiusL)
+• Made from the source code of [LANDAK 🦔](t.me/maafgausahsokap)
 
 • Click /help or Help button below to find out more about how to use me to my full potential.
 
