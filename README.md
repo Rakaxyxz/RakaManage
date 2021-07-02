@@ -1,20 +1,3 @@
 # ⚡Goku
 
-[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/ramadhani892/GOKU)
-
-A modular Telegram Python bot running on python3 with an sqlalchemy database.
-
-Can be found on telegram as [GroupManager](https://t.me/tg_groupmanagerbot).
-
-Alternatively, [find me on telegram](https://t.me/SyndicateTwenty4)! (Keep all support questions in the support chat, where more people can help you.)
-
-# Group
-[Join Discuss Group](https://t.me/giveaways_24hrs)
-
-# Report error
-Report your problem along with your name to [this person](https://t.me/xditya)
-
-# Credits
-This repo is just a custom fork of [HarukaAya](https://gitlab.com/HarukaNetwork/OSS/HarukaAya)
-
-Thanks to the [real developer](https://t.me/RealAkito)!
+[![Deploy To Heroku](https://telegra.ph/file/eb7873c23cb1dee4fab5f.jpg)](https://dashboard.heroku.com/new?template=https://github.com/ramadhani892/GOKU)
