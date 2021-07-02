@@ -34,8 +34,8 @@ You know how hard it is sometimes to manage group. So here is the solution for y
 • Click /help or Help button below to find out more about how to use me to my full potential.
 
 • Sponsored by :
-✓ [⚡𝗟𝘆𝗻𝘅🐈𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡](t.me/LynxUserbot)
-✓ [Federation Super Group](t.me/FederationSuperGroup)
+✓ [GROUP SUPPORT](t.me/OOTSPAMBOT)
+✓ [CHANNEL SUPPORT](t.me/RAMUBOTINFO)
 """
 
 
