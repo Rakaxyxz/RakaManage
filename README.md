@@ -1,6 +1,6 @@
 # ⚡Goku
 
-[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https%3A%2F%2Fgithub.com%2ramadhani892%2GOKU)
+[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/ramadhani892/GOKU)
 
 A modular Telegram Python bot running on python3 with an sqlalchemy database.
 
