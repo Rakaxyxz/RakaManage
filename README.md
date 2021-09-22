@@ -1,5 +1,9 @@
 # 👩‍💻𝐑𝐀𝐗𝐒-𝐁𝐎𝐓 𝐌𝐀𝐍𝐀𝐆𝐄
 
+  BOT INI DIBUAT UNTUK GRUP ANDA DAN MENJAGA KEAMANAN GRUP DARI JAMET JAMET TELE😎
+
+
+
 [![Deploy To Heroku](https://telegra.ph/file/176dcada40ff3d0b19d9d.jpg)](https://dashboard.heroku.com/new?template=https://github.com/Rakaxyxz/RakaManage)
 Contributions are very welcome! Here are some guidelines on how the project is designed.
 
