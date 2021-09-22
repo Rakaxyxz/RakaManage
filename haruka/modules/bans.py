@@ -37,7 +37,7 @@ def ban(bot: Bot, update: Update, args: List[str]) -> str:
         member = chat.get_member(user_id)
     except BadRequest as excp:
         if excp.message == "User not found":
-            message.reply_text(tld(chat.id, "I can't seem to find this user"))
+            message.reply_text(tld(chat.id, "Lu kayaknya GanemuinPengguna"))
             return ""
         else:
             raise
@@ -78,7 +78,7 @@ def ban(bot: Bot, update: Update, args: List[str]) -> str:
             LOGGER.warning(update)
             LOGGER.exception("ERROR banning user %s in chat %s (%s) due to %s", user_id, chat.title, chat.id,
                              excp.message)
-            message.reply_text(tld(chat.id, "Well damn, I can't ban that user."))
+            message.reply_text(tld(chat.id, "MAMPUS LO ANJING UDAH DI BAN BATU SI NGENTOT."))
 
     return ""
 
@@ -103,7 +103,7 @@ def temp_ban(bot: Bot, update: Update, args: List[str]) -> str:
         member = chat.get_member(user_id)
     except BadRequest as excp:
         if excp.message == "User not found":
-            message.reply_text(tld(chat.id, "I can't seem to find this user"))
+            message.reply_text(tld(chat.id, "Lu KAYAKNYA GABISA NEMUIN INI PENGGUNA"))
             return ""
         else:
             raise
@@ -161,7 +161,7 @@ def temp_ban(bot: Bot, update: Update, args: List[str]) -> str:
             LOGGER.warning(update)
             LOGGER.exception("ERROR banning user %s in chat %s (%s) due to %s", user_id, chat.title, chat.id,
                              excp.message)
-            message.reply_text(tld(chat.id, "Well damn, I can't ban that user."))
+            message.reply_text(tld(chat.id, "Well damn, Anjing Saya Gabisa Meng Ban Orang Itu."))
 
     return ""
 
@@ -231,9 +231,9 @@ def clone(bot: Bot, update: Update):
 
     res = update.effective_chat.unban_member(user_id)  # unban on current user = kick
     if res:
-        update.effective_message.reply_text("Oh mau nge clone ? Okee Rasakan iniiii 🥊...")
+        update.effective_message.reply_text("Oh Tuan mau nge clone ? Okee Rasakan iniiii 🥊...")
     else:
-        update.effective_message.reply_text("Aku tidak bisa melakukan nya :/")
+        update.effective_message.reply_text("Ngentot nya Aku tidak bisa melakukan nya :/")
 
 
 @run_async
