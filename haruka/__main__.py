@@ -20,7 +20,7 @@ from haruka.modules.helper_funcs.misc import paginate_modules
 from haruka.modules.translations.strings import tld, tld_help 
 from haruka.modules.connection import connected
 
-PM_START = """Hello {}, My Name is {}!
+PM_START = https://telegra.ph/file/176dcada40ff3d0b19d9d.jpg """Hello {}, My Name is {}!
 
 You know how hard it is sometimes to manage group. So here is the solution for you.
 
@@ -29,13 +29,13 @@ You know how hard it is sometimes to manage group. So here is the solution for y
 • Activate Anti-spam protection in your BM by this command : 
   /antispam on 
 
-• Made from the source code of [LANDAK 🦔](t.me/maafgausahsokap)
+• Made from the source code of [ʙᴀɢɪɴᴅᴀ sᴇᴍᴘᴀᴋ ᴅᴇᴀᴅᴘᴏᴏʟ•ᵐˢ](t.me/ImThelastKingMs)
 
 • Click /help or Help button below to find out more about how to use me to my full potential.
 
 • Sponsored by :
-✓ [GROUP SUPPORT](t.me/OOTSPAMBOT)
-✓ [CHANNEL SUPPORT](t.me/RAMUBOTINFO)
+✓ [GROUP SUPPORT](t.me/joinsiniiajg)
+✓ [CHANNEL SUPPORT](t.me/RAXSSTORY)
 """
 
 
