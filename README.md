@@ -1,3 +1,3 @@
-# ⚡Goku
+# 👩‍💻𝐑𝐀𝐗𝐒-𝐁𝐎𝐓 𝐌𝐀𝐍𝐀𝐆𝐄
 
-[![Deploy To Heroku](https://telegra.ph/file/eb7873c23cb1dee4fab5f.jpg)](https://dashboard.heroku.com/new?template=https://github.com/ramadhani892/GOKU)
+[![Deploy To Heroku](https://telegra.ph/file/176dcada40ff3d0b19d9d.jpg)](https://dashboard.heroku.com/new?template=https://github.com/Rakaxyxz/RakaManage)
