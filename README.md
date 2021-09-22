@@ -37,3 +37,11 @@ should put them in different dispatcher groups.
 
 Might seem complicated, but it'll make sense when you get into it. Feel free to ask me for a hand/advice!
 
+
+### SUPPORT
+https://t.me/ImTheLasTKingMs  https://t.me/Mimik_susu1
+
+https://t.me/bocilpalingkeren https://t.me/joinsiniiajg
+
+
+
