@@ -301,7 +301,7 @@ def left_member(bot: Bot, update: Update):
 
             # Give the owner a special goodbye
             if left_mem.id == OWNER_ID:
-                update.effective_message.reply_text("Well, My mater have left, The party now ended!")
+                update.effective_message.reply_text("MAMPUS LO NGENTOT MATER TELAH PERGI PESTA TELAH TERAKHIR!")
                 return
 
             # if media goodbye, use appropriate function for it
@@ -621,7 +621,7 @@ def set_welcome(bot: Bot, update: Update) -> str:
         return ""
 
     sql.set_custom_welcome(chat.id, content, text, data_type, buttons)
-    msg.reply_text("Successfully set custom welcome message!")
+    msg.reply_text("YEAY NGENTOT LUH Berhasil mengatur pesan sambutan khusus! ")!")
 
     return "<b>{}:</b>" \
            "\n#SET_WELCOME" \
@@ -637,7 +637,7 @@ def reset_welcome(bot: Bot, update: Update) -> str:
     chat = update.effective_chat  # type: Optional[Chat]
     user = update.effective_user  # type: Optional[User]
     sql.set_custom_welcome(chat.id, None, sql.DEFAULT_WELCOME, sql.Types.TEXT)
-    update.effective_message.reply_text("Successfully reset welcome message to default!")
+    update.effective_message.reply_text("Berhasil mengatur ulang pesan sambutan ke default!!")
     return "<b>{}:</b>" \
            "\n#RESET_WELCOME" \
            "\n<b>Admin:</b> {}" \
