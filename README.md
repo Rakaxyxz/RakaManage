@@ -43,9 +43,10 @@ Might seem complicated, but it'll make sense when you get into it. Feel free to 
 
 
 ### SUPPORT
-https://t.me/ImTheLasTKingMs  https://t.me/Mimik_susu1
 
-https://t.me/bocilpalingkeren https://t.me/joinsiniiajg
+<a href="https://t.me/joinsiniiajg" target="blank"><img src="https://img.shields.io/badge/ALAHSIABOI-green?style=flat&logo=telegram" /></a>
+<a href="https://t.me/thiswirosableng" target="blank"><img src="https://img.shields.io/badge/WIRO SABLENG ALIANSI-black?style=flat&logo=telegram" /></a>
+
 
 
 
