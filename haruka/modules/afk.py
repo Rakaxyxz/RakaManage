@@ -28,7 +28,7 @@ def afk(bot: Bot, update: Update):
 
     sql.set_afk(update.effective_user.id, reason)
     fname = update.effective_user.first_name
-    update.effective_message.reply_text(tld(chat.id, f"#BUSY\n{fname} 𝗧𝗲𝗹𝗮𝗵 MENINGGAL KARENA 𝘼𝙁𝙆❗"))
+    update.effective_message.reply_text(tld(chat.id, f"#JEMBUT\n{fname} 𝗧𝗲𝗹𝗮𝗵 MENINGGAL KARENA 𝘼𝙁𝙆❗"))
 
 
 @run_async
