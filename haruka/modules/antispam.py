@@ -138,7 +138,7 @@ def gban(bot: Bot, update: Update, args: List[str]):
     send_to_list(bot, SUDO_USERS + SUPPORT_USERS,
                    "{} has been successfully gbanned!".format(mention_html(user_chat.id, user_chat.first_name)),
                    html=True)
-    text13 = f"Successfully gbanned {ok123} 🙂 'He Deserve This'."
+    text13 = f"MAMPUS SI NGENTOT TELAH DI GBANN👩‍💻 {ok123} 🙂 'He Deserve This'."
     update.effective_message.reply_text(text13, parse_mode=ParseMode.HTML)
 
 
