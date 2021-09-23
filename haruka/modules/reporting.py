@@ -197,27 +197,27 @@ def buttons(bot: Bot, update):
         try:
             bot.kickChatMember(splitter[0], splitter[2])
             bot.unbanChatMember(splitter[0], splitter[2])
-            query.answer("✅ Succesfully kicked")
+            query.answer("✅ SuKses Mengkick Anak Ngentot")
             return ""
         except Exception as err:
-            query.answer("❎ Failed to kick")
+            query.answer("❎ Gagal Mengkick Anak Ngentot Emang Gabisa Di kick Anjing Lo")
             bot.sendMessage(text="Error: {}".format(err),
                             chat_id=query.message.chat_id,
                             parse_mode=ParseMode.HTML)
     elif splitter[1] == "banned":
         try:
             bot.kickChatMember(splitter[0], splitter[2])
-            query.answer("✅  Succesfully Banned")
+            query.answer("✅  SuKses MampuS Lo Gua Ban Anjing Anak babi Pergi Ngentot")
             return ""
         except Exception as err:
             bot.sendMessage(text="Error: {}".format(err),
                             chat_id=query.message.chat_id,
                             parse_mode=ParseMode.HTML)
-            query.answer("❎ Failed to ban")
+            query.answer("❎ GAGAL LO NGE BAN DIA NGENTOT")
     elif splitter[1] == "delete":
         try:
             bot.deleteMessage(splitter[0], splitter[3])
-            query.answer("✅ Message Deleted")
+            query.answer("✅ Pesan Dihapus Mampus Lo memek")
             return ""
         except Exception as err:
             bot.sendMessage(text="Error: {}".format(err),
