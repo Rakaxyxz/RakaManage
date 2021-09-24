@@ -621,7 +621,7 @@ def set_welcome(bot: Bot, update: Update) -> str:
         return ""
 
     sql.set_custom_welcome(chat.id, content, text, data_type, buttons)
-    msg.reply_text("YEAY NGENTOT LUH Berhasil mengatur pesan sambutan khusus! ")!")
+    msg.reply_text("YEAY NGENTOT LUH Berhasil mengatur pesan sambutan khusus!")
 
     return "<b>{}:</b>" \
            "\n#SET_WELCOME" \
